@@ -1,0 +1,16 @@
+[
+  {
+    "Key": "Assets\\scenes",
+    "Value": {
+      "Color": "0.69443,0.75461,0.99535,1",
+      "Icon": "map"
+    }
+  },
+  {
+    "Key": "Assets\\sents",
+    "Value": {
+      "Color": "0.99217,0.53023,1,1",
+      "Icon": "cloud_upload"
+    }
+  }
+]

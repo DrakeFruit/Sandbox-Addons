@@ -1,0 +1,8 @@
+{
+  "Prefab": "sents/flashlight/flashlight.prefab",
+  "Title": "Flashlight",
+  "Description": "Half Life style flashlight",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

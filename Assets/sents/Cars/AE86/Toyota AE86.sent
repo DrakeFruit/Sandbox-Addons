@@ -1,0 +1,8 @@
+{
+  "Prefab": "sents/cars/ae86/toyota ae86.prefab",
+  "Title": "Toyota AE86",
+  "Description": "You know this one, press 'E' to drive it",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

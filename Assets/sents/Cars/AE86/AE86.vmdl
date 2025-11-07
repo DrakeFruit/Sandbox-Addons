@@ -1,0 +1,115 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "carbadges_misc_u.vmat"
+								to = "sents/cars/ae86/materials/carbadges_misc_u.vmat"
+							},
+							{
+								from = "numberplates_misk_u.vmat"
+								to = "sents/cars/ae86/materials/numberplates_misk_u.vmat"
+							},
+							{
+								from = "rb1c_tire_1k.vmat"
+								to = "sents/cars/ae86/materials/rb1c_tire_1k.vmat"
+							},
+							{
+								from = "tiaragt83_bodymat.vmat"
+								to = "sents/cars/ae86/materials/generic_bodymat_dif.vmat"
+							},
+							{
+								from = "ucb_bottom.vmat"
+								to = "sents/cars/ae86/materials/ucb_bottom.vmat"
+							},
+							{
+								from = "ucb_interiors_2.vmat"
+								to = "sents/cars/ae86/materials/ucb_interiors_2.vmat"
+							},
+							{
+								from = "ucb_lights_and_glass.vmat"
+								to = "sents/cars/ae86/materials/ucb_lights_and_glass_transparent.vmat"
+							},
+							{
+								from = "ucb_lights_and_glass_transperent.vmat"
+								to = "sents/cars/ae86/materials/ucb_lights_and_glass_transparent.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = "materials/default.vmat"
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "sents/cars/ae86/AE86.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 49.200001
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = true
+							exception_list = 
+							[
+								"TiaraGT83_Body",
+								"TiaraGT83_Headlight_Glass",
+								"TiaraGT83_Brakelights",
+								"TiaraGT83_Glass",
+								"TiaraGT83_Bottom",
+								"TiaraGT83_Suspension",
+								"TiaraGT83_Interior",
+								"TiaraGT83_Trunkdoor_inner",
+								"TiaraGT83_Trunkdoor",
+								"TiaraGT83_Hood",
+								"TiaraGT83_Trunkdoor_Trim",
+								"TiaraGT83_Trunkdoor_Glass",
+								"TiaraGT83_Reverselights",
+								"TiaraGT83_Windshield",
+								"TiaraGT83_Bumper_rear_TrimB",
+								"TiaraGT83_Bumper_rear_TrimB_Shell",
+								"TiaraGT83_Bumper_FrontB",
+								"TiaraGT83_Bumper_FrontB_inner",
+								"TiaraGT83_Glass_Driver",
+								"TiaraGT83_Glass_Passenger",
+								"TiaraGT83_Steering_Wheel",
+								"TiaraGT83_Headlights",
+								"TiaraGT83_Blinkers",
+								"TiaraGT83_Bumper_Front_Badges",
+								"TiaraGT83_Body_Badges",
+								"TiaraGT83Tuned_Numberplate_Front",
+								"TiaraGT83Tuned_Numberplate_Rear",
+								"TiaraGT83_CaliperTuner_FR",
+								"TiaraGT83_CaliperTuner_RR",
+								"TiaraGT83_CaliperTuner_RL",
+								"TiaraGT83_CaliperTuner_FL",
+							]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		base_model_name = ""
+	}
+}

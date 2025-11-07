@@ -1,0 +1,23 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Carbadges Misc U Dif",
+      "Type": "material",
+      "Org": "local",
+      "Ident": "carbadgesmiscudif",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": [
+        "facepunch.v_usp#110418"
+      ],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "sents/cars/ae86/materials/carbadges_misc_u_dif.vmat"
+      }
+    }
+  }
+}

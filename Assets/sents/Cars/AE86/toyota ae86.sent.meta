@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Toyota Ae 86",
+      "Type": "sent",
+      "Org": "drakefruit",
+      "Ident": "toyotaae86",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "sents/cars/ae86/toyota ae86.sent"
+      }
+    }
+  }
+}

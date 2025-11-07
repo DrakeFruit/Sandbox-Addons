@@ -1,0 +1,23 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Rb 1C Tire 1K Dif",
+      "Type": "material",
+      "Org": "local",
+      "Ident": "rb1ctire1kdif",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": [
+        "facepunch.v_usp#110418"
+      ],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "sents/cars/ae86/materials/rb1c_tire_1k_dif.vmat"
+      }
+    }
+  }
+}

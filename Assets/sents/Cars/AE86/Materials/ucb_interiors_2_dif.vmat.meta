@@ -1,0 +1,23 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Ucb Interiors 2 Dif",
+      "Type": "material",
+      "Org": "local",
+      "Ident": "ucbinteriors2dif",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": [
+        "facepunch.v_usp#110418"
+      ],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "sents/cars/ae86/materials/ucb_interiors_2_dif.vmat"
+      }
+    }
+  }
+}

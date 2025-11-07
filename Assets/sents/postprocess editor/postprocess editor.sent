@@ -1,0 +1,8 @@
+{
+  "Prefab": "sents/postprocess editor/postprocess editor.prefab",
+  "Title": "Postprocess Editor",
+  "Description": "Adds a menu to edit the post processing on your camera",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

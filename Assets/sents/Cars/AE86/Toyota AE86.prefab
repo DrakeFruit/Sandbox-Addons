@@ -1,0 +1,672 @@
+{
+  "RootObject": {
+    "__guid": "9ed4492a-c006-4acb-891a-4bdf6ea0d548",
+    "__version": 1,
+    "Flags": 0,
+    "Name": "toyota ae86",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "NetworkOrphaned": 0,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Car",
+        "__guid": "97358776-879a-409c-bacf-84b76edc0f19",
+        "__enabled": true,
+        "BackTires": [
+          {
+            "_type": "gameobject",
+            "go": "20962f05-786e-4584-85fc-d304e475a827"
+          },
+          {
+            "_type": "gameobject",
+            "go": "f867e8e3-b139-44aa-8513-45ef881fa3e9"
+          }
+        ],
+        "FrontTires": [
+          {
+            "_type": "gameobject",
+            "go": "b2ecaadf-d6c3-44b5-99a6-7ed7b2a774e8"
+          },
+          {
+            "_type": "gameobject",
+            "go": "0998018f-8d90-4aec-9e1f-fd4a0bd60079"
+          }
+        ],
+        "MaxSpeed": 2000,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "SpringDamping": 1500,
+        "SpringStrength": 30000,
+        "TireGrip": 200,
+        "TireMass": 10,
+        "TireRestDistance": 38
+      },
+      {
+        "__type": "Sandbox.BaseChair",
+        "__guid": "d4dabcf3-5de4-4e26-a85c-bad7efaea055",
+        "__enabled": true,
+        "ExitPoints": [
+          {
+            "_type": "gameobject",
+            "go": "b37f7328-529b-4ee6-a29f-632123f27ec5"
+          },
+          {
+            "_type": "gameobject",
+            "go": "e233eb48-a7d7-4131-9e92-1605c55d23f6"
+          }
+        ],
+        "EyePosition": {
+          "_type": "gameobject",
+          "go": "eb10cc00-9f7c-41ec-8215-69f541933e5e"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "PitchRange": "-90,70",
+        "SeatPosition": {
+          "_type": "gameobject",
+          "go": "d558dc6b-4996-4049-bd6c-78791b9703df"
+        },
+        "SitHeight": 0.754902,
+        "SitPose": "Chair",
+        "YawRange": "-120,120"
+      },
+      {
+        "__type": "Sandbox.Rigidbody",
+        "__guid": "c7e5392a-d018-4190-884c-fe21fbe75035",
+        "__enabled": true,
+        "AngularDamping": 0,
+        "Gravity": true,
+        "GravityScale": 1,
+        "LinearDamping": 0,
+        "Locking": {
+          "X": false,
+          "Y": false,
+          "Z": false,
+          "Pitch": false,
+          "Yaw": false,
+          "Roll": false
+        },
+        "MassCenterOverride": "4,0,15",
+        "MassOverride": 1500,
+        "MotionEnabled": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OverrideMassCenter": true,
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "4acc76ed-a0ff-4dba-8be9-b1dc2f67b31e",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Collider",
+        "Position": "4,0,20",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "1,2.229999,0.5",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "b7cbd1a3-b4d8-426b-85ee-3ca6e37625e4",
+            "__enabled": true,
+            "Center": "0,-2,8.999996",
+            "ColliderFlags": 0,
+            "Elasticity": null,
+            "Friction": null,
+            "IsTrigger": false,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "RollingResistance": null,
+            "Scale": "50,90,68.00001",
+            "Static": false,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "e80afda1-245c-459e-b405-405dcc3d4846",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Collider (1)",
+        "Position": "4,0,20",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "1,2.229999,0.5",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "a6aae26f-af6b-44c2-ae55-0de9a8c2f0f3",
+            "__enabled": true,
+            "Center": "0,-9,56.49995",
+            "ColliderFlags": 0,
+            "Elasticity": null,
+            "Friction": null,
+            "IsTrigger": false,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "RollingResistance": null,
+            "Scale": "50,52,55.00005",
+            "Static": false,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "bb0ed7f0-42b8-4ad3-b3d6-86d55ccc2d45",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Model",
+        "Position": "0,0,0",
+        "Rotation": "0,0,-0.7071067,0.7071068",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "b73a11c3-5d6c-4585-83f0-210ca9db748c",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "LodOverride": null,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Materials": null,
+            "Model": "sents/cars/ae86/ae86.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "52620479-5b68-4d07-88cd-ea3aae930620",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "chair",
+        "Position": "-4,17.21076,16",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "removable",
+        "Enabled": true,
+        "NetworkMode": 1,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "d558dc6b-4996-4049-bd6c-78791b9703df",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "sit",
+            "Position": "12,6.000003,-20",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          },
+          {
+            "__guid": "eb10cc00-9f7c-41ec-8215-69f541933e5e",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "eye",
+            "Position": "0,0,37",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": [
+              {
+                "__guid": "6ff9bc84-9263-4fb5-970c-8c5d459bc5ce",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "collider",
+                "Position": "-3.364326,0,-2.47538",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [
+                  {
+                    "__type": "Sandbox.SphereCollider",
+                    "__guid": "3ea2a731-b57f-45d1-a6b7-017c10af1b26",
+                    "__enabled": true,
+                    "Center": "0,0,0",
+                    "ColliderFlags": "IgnoreTraces, IgnoreMass",
+                    "Elasticity": null,
+                    "Friction": null,
+                    "IsTrigger": false,
+                    "OnComponentDestroy": null,
+                    "OnComponentDisabled": null,
+                    "OnComponentEnabled": null,
+                    "OnComponentFixedUpdate": null,
+                    "OnComponentStart": null,
+                    "OnComponentUpdate": null,
+                    "OnObjectTriggerEnter": null,
+                    "OnObjectTriggerExit": null,
+                    "OnTriggerEnter": null,
+                    "OnTriggerExit": null,
+                    "Radius": 8,
+                    "RollingResistance": null,
+                    "Static": false,
+                    "Surface": null,
+                    "SurfaceVelocity": "0,0,0"
+                  }
+                ],
+                "Children": []
+              }
+            ]
+          },
+          {
+            "__guid": "f76204a1-23dc-4c2e-9abb-9d46407dcb56",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "exit",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": [
+              {
+                "__guid": "b37f7328-529b-4ee6-a29f-632123f27ec5",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "a",
+                "Position": "0.000001907349,36,0",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [],
+                "Children": []
+              },
+              {
+                "__guid": "e233eb48-a7d7-4131-9e92-1605c55d23f6",
+                "__version": 1,
+                "Flags": 0,
+                "Name": "b",
+                "Position": "-0.000009536743,-60,0",
+                "Rotation": "0,0,0,1",
+                "Scale": "1,1,1",
+                "Tags": "",
+                "Enabled": true,
+                "NetworkMode": 2,
+                "NetworkInterpolation": true,
+                "NetworkOrphaned": 0,
+                "OwnerTransfer": 1,
+                "Components": [],
+                "Children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "__guid": "b2ecaadf-d6c3-44b5-99a6-7ed7b2a774e8",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Front Left",
+        "Position": "63,33.00002,3",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "da7369d1-e2e9-466c-bba4-90e15c9339cd",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "ae86-tire",
+            "Position": "0,0,0",
+            "Rotation": "0,-0,-0.7071068,0.7071068",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "a091a0b5-869e-497a-972d-e8b3a25c415c",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "sents/cars/ae86/ae86-tire.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "0998018f-8d90-4aec-9e1f-fd4a0bd60079",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Front Right",
+        "Position": "63,-33,3",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "c0dad599-e29c-48ea-b02b-aa077973646a",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "ae86-tire",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0.7071068,0.7071068",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "399d2be9-f6c3-41bc-9e94-d174f8dd5737",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "sents/cars/ae86/ae86-tire.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "20962f05-786e-4584-85fc-d304e475a827",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Back Left",
+        "Position": "-55,33.00002,3",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "a1088eda-aaa7-4fd8-b82b-91e838b9eb19",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "ae86-tire",
+            "Position": "0,0,0",
+            "Rotation": "0,-0,-0.7071068,0.7071068",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "bf1499e6-bf21-45dd-996c-caff983ee93b",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "sents/cars/ae86/ae86-tire.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "f867e8e3-b139-44aa-8513-45ef881fa3e9",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Back Right",
+        "Position": "-55,-33,3",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "1459ae29-baed-4669-94e3-d263684546cd",
+            "__version": 1,
+            "Flags": 0,
+            "Name": "ae86-tire",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0.7071068,0.7071068",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkInterpolation": true,
+            "NetworkOrphaned": 0,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "085ae68f-f8b8-4d5f-8472-d8e3509e5c89",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "sents/cars/ae86/ae86-tire.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ],
+            "Children": []
+          }
+        ]
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

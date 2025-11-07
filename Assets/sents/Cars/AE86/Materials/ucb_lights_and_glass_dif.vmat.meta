@@ -1,0 +1,23 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "Ucb Lights And Glass Dif",
+      "Type": "material",
+      "Org": "local",
+      "Ident": "ucblightsandglassdif",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": [
+        "facepunch.v_usp#110418"
+      ],
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "sents/cars/ae86/materials/ucb_lights_and_glass_dif.vmat"
+      }
+    }
+  }
+}

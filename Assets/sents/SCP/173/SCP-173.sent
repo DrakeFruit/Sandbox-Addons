@@ -1,0 +1,8 @@
+{
+  "Prefab": "sents/scp/173/scp-173.prefab",
+  "Title": "SCP-173",
+  "Description": "Don't blink",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}
