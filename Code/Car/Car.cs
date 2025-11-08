@@ -5,12 +5,15 @@ using Sandbox;
 
 public sealed class Car : Component
 {
-	[Property] public float TireRestDistance { get; set; } = 20;
-	[Property] public float SpringStrength { get; set; } = 2000;
-	[Property] public float SpringDamping { get; set; } = 1000f;
-	[Property] public float TireGrip { get; set; } = 10;
+	[Property] public float TireRestDistance { get; set; } = 38;
+	[Property] public float SpringStrength { get; set; } = 30;
+	[Property] public float SpringDamping { get; set; } = 1500;
+	[Property] public float TireGrip { get; set; } = 200;
 	[Property] public float TireMass { get; set; } = 10;
-	[Property] public float MaxSpeed { get; set; } = 2000;
+	[Property] public float MaxSpeedMPH { get; set; } = 90;
+	public float MaxSpeed { get { return MaxSpeedMPH * 17.6f; } }
+	[Property] public float TurnSpeed { get; set; } = 10;
+	[Property] public Curve TorqueCurve { get; set; }
 	[Property] public List<GameObject> FrontTires { get; set; }
 	[Property] public List<GameObject> BackTires { get; set; }
 
@@ -22,6 +25,7 @@ public sealed class Car : Component
 	
 	protected override void OnFixedUpdate()
 	{
+		if ( IsProxy ) return;
 		DebugOverlay.ScreenText( new Vector2( 120, 20 ), (Rb.Velocity.Length / 17.6f).Floor().ToString() + " mph", 40,
 			TextFlag.Absolute, Color.Orange );
 		foreach ( var i in FrontTires )
@@ -32,18 +36,25 @@ public sealed class Car : Component
 			{
 				if ( !WasInCar )
 				{
-					var doorSnd = Sound.Play( "sounds/cars/door-close.sound" );
+					/*var doorSnd = Sound.Play( "sounds/cars/door-close.sound" );
 					var engineStartSnd = Sound.Play( "sounds/cars/engine-start.sound" );
 					doorSnd.Parent = GameObject;
 					engineStartSnd.Parent = GameObject;
 					doorSnd.FollowParent = true;
-					engineStartSnd.FollowParent = true;
+					engineStartSnd.FollowParent = true;*/
 				}
 				
-				i.LocalRotation *= Rotation.Identity.Angles().WithYaw( Input.AnalogMove.y * 1.25f );
+				//rotate wheel for steering
+				i.LocalRotation *= Rotation.Identity.Angles().WithYaw( Input.AnalogMove.y * (TurnSpeed * 0.1f) );
 				i.LocalRotation = i.LocalRotation.Clamp( Rotation.FromYaw( 0 ), 45 );
 				DebugOverlay.ScreenText( new Vector2( 20, 20 ), (-i.LocalRotation.Yaw()).Floor().ToString(), 40,
 					TextFlag.Absolute, Color.Orange );
+				//slowly rotate the wheel back to neutral
+				if ( Input.AnalogMove.y.AlmostEqual( 0 ) )
+				{
+					var dif = Rotation.Difference( i.LocalRotation, Rotation.Identity );
+					i.LocalRotation *= dif / 20;
+				}
 				
 				WasInCar = true;
 			}
@@ -70,7 +81,7 @@ public sealed class Car : Component
 			
 			var springDir = tire.WorldRotation.Up;
 			var springVel = Vector3.Dot( springDir, tireWorldVelocity );
-			var springForce = (offset * SpringStrength) - (springVel * SpringDamping);
+			var springForce = (offset * (SpringStrength * Rb.Mass)) - (springVel * SpringDamping);
 			
 			var slipDir = tire.WorldRotation.Left;
 			var slipVel = Vector3.Dot( slipDir, tireWorldVelocity );
@@ -95,12 +106,14 @@ public sealed class Car : Component
 			var driveDir = tire.WorldRotation.Forward;
 			var driveVel = Vector3.Dot( driveDir, tireWorldVelocity );
 			
-			//var driveVelNormal = float.Clamp(MathF.Abs( driveVel ) / MaxSpeed, 0, 1);
-			var driveForce = -driveVel * 1000;
-			if ( Chair.IsOccupied && !Input.AnalogMove.x.AlmostEqual(0) )
+			var driveVelNormal = float.Clamp(MathF.Abs( driveVel ) / MaxSpeed, 0, 1);
+			var driveForce = TorqueCurve.Evaluate( driveVelNormal ) * Input.AnalogMove.x * 200000;
+			if ( !Chair.IsOccupied || Input.AnalogMove.x <= 0 )
 			{
-				driveForce = Input.AnalogMove.x * 100000;
+				driveForce = -driveVel * 1000;
 			}
+
+			if ( driveVel >= MaxSpeed ) driveForce = 0;
 		
 			Rb.ApplyForceAt( tire.WorldPosition, driveDir * driveForce );
 			//DebugOverlay.Line(tire.WorldPosition, tire.WorldPosition + driveDir * driveForce, Color.Green);

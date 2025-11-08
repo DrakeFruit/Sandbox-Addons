@@ -25,12 +25,21 @@ public class SCP173 : Component
 	
 	protected override void OnFixedUpdate()
 	{
+		if ( IsProxy ) return;
 		foreach ( var i in Scene.GetAll<PlayerController>() )
 		{
 			i.GetOrAddComponent<Observer>();
 		}
 
-		NearestPlayer = Scene.GetAll<PlayerController>().OrderBy( x => x.WorldPosition - WorldPosition ).FirstOrDefault();
+		var players = Scene.GetAll<PlayerController>();
+		NearestPlayer = players.FirstOrDefault();
+		foreach ( var i in players )
+		{
+			if ( NearestPlayer.IsValid() && (i.WorldPosition - WorldPosition).Length < (NearestPlayer.WorldPosition - WorldPosition).Length )
+			{
+				NearestPlayer = i;
+			}
+		}
 		if ( !IsObserved && NearestPlayer.IsValid() )
 		{
 			Agent.MoveTo(NearestPlayer.WorldPosition);
@@ -45,8 +54,8 @@ public class SCP173 : Component
 					{
 						Damage = 999999, Attacker = GameObject, Position = component.WorldPosition,
 					} );
-					var neckSnapSnd = Sound.Play("sounds/neck-snap.sound");
-					neckSnapSnd.Position = component.WorldPosition;
+					/*var neckSnapSnd = Sound.Play("sounds/neck-snap.sound");
+					neckSnapSnd.Position = component.WorldPosition;*/
 				}
 			}
 		}
@@ -56,7 +65,7 @@ public class SCP173 : Component
 			Agent.Stop();
 		}
 
-		if ( ScrapeSnd.IsValid() )
+		/*if ( ScrapeSnd.IsValid() )
 		{
 			ScrapeSnd.Position = WorldPosition;
 		}
@@ -67,7 +76,7 @@ public class SCP173 : Component
 		if ( ScrapeSnd.IsValid() && Agent.Velocity.Length.AlmostEqual( 0 ) )
 		{
 			ScrapeSnd.Stop();
-		}
+		}*/
 	}
 	
 	[Rpc.Broadcast]

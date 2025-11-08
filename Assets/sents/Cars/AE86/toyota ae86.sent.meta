@@ -2,7 +2,7 @@
   "publish": {
     "Enabled": true,
     "ProjectConfig": {
-      "Title": "Toyota Ae 86",
+      "Title": "Toyota AE86",
       "Type": "sent",
       "Org": "drakefruit",
       "Ident": "toyotaae86",

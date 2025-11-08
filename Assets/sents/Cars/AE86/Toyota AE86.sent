@@ -4,5 +4,6 @@
   "Description": "You know this one, press 'E' to drive it",
   "IncludeCode": true,
   "__references": [],
+  "Resources": "sounds/Cars/*",
   "__version": 0
 }

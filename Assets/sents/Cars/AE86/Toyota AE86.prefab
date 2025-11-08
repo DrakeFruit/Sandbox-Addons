@@ -9,7 +9,7 @@
     "Scale": "1,1,1",
     "Tags": "",
     "Enabled": true,
-    "NetworkMode": 2,
+    "NetworkMode": 1,
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
     "OwnerTransfer": 1,
@@ -38,7 +38,7 @@
             "go": "0998018f-8d90-4aec-9e1f-fd4a0bd60079"
           }
         ],
-        "MaxSpeed": 2000,
+        "MaxSpeedMPH": 125,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -46,10 +46,44 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "SpringDamping": 1500,
-        "SpringStrength": 30000,
-        "TireGrip": 200,
+        "SpringStrength": 25,
+        "TireGrip": 250,
         "TireMass": 10,
-        "TireRestDistance": 38
+        "TireRestDistance": 34,
+        "TorqueCurve": {
+          "rangey": "0.2774768,1",
+          "frames": [
+            {
+              "x": 0,
+              "y": 0.49652386,
+              "in": -0.07547209,
+              "out": 0.07547209,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 0.5140625,
+              "y": 1,
+              "in": 0,
+              "out": 0,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 0.6703125,
+              "y": 1,
+              "in": 0.047618628,
+              "out": -0.047618628,
+              "mode": "Mirrored"
+            },
+            {
+              "x": 1,
+              "y": -0.0029154606,
+              "in": 0.31578952,
+              "out": -0.31578952,
+              "mode": "Mirrored"
+            }
+          ]
+        },
+        "TurnSpeed": 10
       },
       {
         "__type": "Sandbox.BaseChair",
@@ -100,7 +134,7 @@
           "Yaw": false,
           "Roll": false
         },
-        "MassCenterOverride": "4,0,15",
+        "MassCenterOverride": "4,0,0",
         "MassOverride": 1500,
         "MotionEnabled": true,
         "OnComponentDestroy": null,
