@@ -1,0 +1,8 @@
+{
+  "Prefab": "sents/explosives/nuke/nuke.prefab",
+  "Title": "Nuke",
+  "Description": "boom boom explode pow ouchy ow",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}

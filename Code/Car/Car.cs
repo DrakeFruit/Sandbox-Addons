@@ -26,8 +26,6 @@ public sealed class Car : Component
 	protected override void OnFixedUpdate()
 	{
 		if ( IsProxy ) return;
-		DebugOverlay.ScreenText( new Vector2( 120, 20 ), (Rb.Velocity.Length / 17.6f).Floor().ToString() + " mph", 40,
-			TextFlag.Absolute, Color.Orange );
 		foreach ( var i in FrontTires )
 		{
 			ApplySuspension( i );
@@ -55,6 +53,8 @@ public sealed class Car : Component
 					var dif = Rotation.Difference( i.LocalRotation, Rotation.Identity );
 					i.LocalRotation *= dif / 20;
 				}
+				DebugOverlay.ScreenText( new Vector2( 120, 20 ), (Rb.Velocity.Length / 17.6f).Floor().ToString() + " mph", 40,
+					TextFlag.Absolute, Color.Orange );
 				
 				WasInCar = true;
 			}
@@ -108,11 +108,11 @@ public sealed class Car : Component
 			
 			var driveVelNormal = float.Clamp(MathF.Abs( driveVel ) / MaxSpeed, 0, 1);
 			var driveForce = TorqueCurve.Evaluate( driveVelNormal ) * Input.AnalogMove.x * 200000;
-			if ( !Chair.IsOccupied || Input.AnalogMove.x <= 0 )
+			
+			if ( !Chair.IsOccupied || Input.AnalogMove.x.AlmostEqual( 0 ) )
 			{
 				driveForce = -driveVel * 1000;
 			}
-
 			if ( driveVel >= MaxSpeed ) driveForce = 0;
 		
 			Rb.ApplyForceAt( tire.WorldPosition, driveDir * driveForce );

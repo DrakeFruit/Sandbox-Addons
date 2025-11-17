@@ -1,10 +1,10 @@
 {
   "publish": {
-    "Enabled": false,
+    "Enabled": true,
     "ProjectConfig": {
-      "Title": "Ae 86",
+      "Title": "Toyota AE86 (no wheels)",
       "Type": "model",
-      "Org": "local",
+      "Org": "drakefruit",
       "Ident": "ae86",
       "Schema": 0,
       "IncludeSourceFiles": false,

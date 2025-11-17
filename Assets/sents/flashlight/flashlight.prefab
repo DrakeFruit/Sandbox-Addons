@@ -13,25 +13,7 @@
     "NetworkInterpolation": true,
     "NetworkOrphaned": 0,
     "OwnerTransfer": 1,
-    "Components": [
-      {
-        "__type": "Flashlight",
-        "__guid": "b4e3175f-14f8-4edb-8e0e-f6ca17021fb1",
-        "__enabled": true,
-        "Light": {
-          "_type": "component",
-          "component_id": "ad10de59-0acd-421f-9491-53e5766d6f20",
-          "go": "46cce4f3-5896-4abb-adee-3f8efe0c995a",
-          "component_type": "SpotLight"
-        },
-        "OnComponentDestroy": null,
-        "OnComponentDisabled": null,
-        "OnComponentEnabled": null,
-        "OnComponentFixedUpdate": null,
-        "OnComponentStart": null,
-        "OnComponentUpdate": null
-      }
-    ],
+    "Components": [],
     "Children": [
       {
         "__guid": "46cce4f3-5896-4abb-adee-3f8efe0c995a",
@@ -48,6 +30,23 @@
         "NetworkOrphaned": 0,
         "OwnerTransfer": 1,
         "Components": [
+          {
+            "__type": "Flashlight",
+            "__guid": "ade24c3c-0114-4b9d-8084-1c4f247222d3",
+            "__enabled": true,
+            "Light": {
+              "_type": "component",
+              "component_id": "ad10de59-0acd-421f-9491-53e5766d6f20",
+              "go": "46cce4f3-5896-4abb-adee-3f8efe0c995a",
+              "component_type": "SpotLight"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          },
           {
             "__type": "Sandbox.SpotLight",
             "__guid": "ad10de59-0acd-421f-9491-53e5766d6f20",
@@ -67,6 +66,73 @@
             "OnComponentUpdate": null,
             "Radius": 500,
             "Shadows": true
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "ef3b449f-0b6e-4017-955c-6de22ebf48be",
+        "__version": 1,
+        "Flags": 0,
+        "Name": "Sound Point",
+        "Position": "149.995,149.995,-212.125",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "NetworkOrphaned": 0,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.SoundPointComponent",
+            "__guid": "360ffa60-04f5-4b49-a5f6-062c7a5a1d3c",
+            "__enabled": true,
+            "Distance": 1000,
+            "DistanceAttenuation": true,
+            "DistanceAttenuationOverride": true,
+            "Falloff": [
+              {
+                "x": 0,
+                "y": 1,
+                "in": 3.1415927,
+                "out": -3.1415927,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 1,
+                "y": 0,
+                "in": 0,
+                "out": 0,
+                "mode": "Mirrored"
+              }
+            ],
+            "Force2d": false,
+            "MaxRepeatTime": 1,
+            "MinRepeatTime": 1,
+            "Occlusion": false,
+            "OcclusionOverride": false,
+            "OcclusionRadius": 32,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Pitch": 1,
+            "PlayOnStart": false,
+            "ReflectionOverride": false,
+            "Reflections": false,
+            "Repeat": false,
+            "SoundEvent": "sounds/flashlight-click.sound",
+            "SoundOverride": false,
+            "StopOnNew": false,
+            "TargetMixer": {
+              "Name": "unknown",
+              "Id": "00000000-0000-0000-0000-000000000000"
+            },
+            "Volume": 1
           }
         ],
         "Children": []

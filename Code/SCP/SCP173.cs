@@ -25,7 +25,6 @@ public class SCP173 : Component
 	
 	protected override void OnFixedUpdate()
 	{
-		if ( IsProxy ) return;
 		foreach ( var i in Scene.GetAll<PlayerController>() )
 		{
 			i.GetOrAddComponent<Observer>();
