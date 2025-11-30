@@ -1,0 +1,8 @@
+{
+  "Prefab": "sents/seal/seal plush.prefab",
+  "Title": "Seal Plush",
+  "Description": "Seal is your friend",
+  "IncludeCode": true,
+  "__references": [],
+  "__version": 0
+}
